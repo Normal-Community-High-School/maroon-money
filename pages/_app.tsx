@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import NextApp, { AppProps, AppContext } from 'next/app';
+import { IconSun, IconMoonStars } from '@tabler/icons';
 import { getCookie, setCookie } from 'cookies-next';
 import Head from 'next/head';
-import { MantineProvider, ColorScheme, ColorSchemeProvider } from '@mantine/core';
+import Link from 'next/link';
+import { MantineProvider, ColorScheme, ColorSchemeProvider, Header, AppShell, Group, ActionIcon } from '@mantine/core';
 import { NotificationsProvider } from '@mantine/notifications';
+import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
 
 export default function App(props: AppProps & { colorScheme: ColorScheme }) {
   const { Component, pageProps } = props;
@@ -26,7 +29,32 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
       <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
         <MantineProvider theme={{ colorScheme }} withGlobalStyles withNormalizeCSS>
           <NotificationsProvider>
+          <AppShell
+      padding="md"
+      fixed={false}
+      header={
+        <Header height={60}>
+          <Group sx={{ height: '100%' }} px={20} position="apart">
+            <Link href="/">Home</Link>
+            <Link href="/collegeinfo">College Info</Link>
+            <Link href="/finaid">Financial Aid</Link>
+            <Link href="/loancalc">Loan Calculator</Link>
+            <Link href="/dictionary">Dictionary</Link>
+            <Link href="/feedback">Feedback</Link>
+            <Link href="/about">About Us</Link>
+            <ColorSchemeToggle />
+          </Group>
+        </Header>
+      }
+      styles={(theme) => ({
+        main: {
+          backgroundColor:
+            theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[0],
+        },
+      })}
+    >
             <Component {...pageProps} />
+            </AppShell>
           </NotificationsProvider>
         </MantineProvider>
       </ColorSchemeProvider>
