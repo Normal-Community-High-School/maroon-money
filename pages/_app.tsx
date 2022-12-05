@@ -38,7 +38,7 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
                 <Navbar width={{ base: "20%" }}
                   hidden={!opened}
                 >
-                  <MediaQuery largerThan="sm" styles={{ display: 'none' }}>
+                  <MediaQuery smallerThan="sm" styles={{ display: 'none' }}>
                     <Flex direction="column" gap="lg">
                       <Link href="/">Home</Link>
                       <Link href="/collegeinfo">College Info</Link>
