@@ -6,7 +6,7 @@ export default function LoanCalcPage() {
 
   return (
     <>
-    <Box id="iq-calculators-embed-1669734975937">
+    <Box id="iq-calculators-embed-1669734975937" />
     <Script
       
       type="text/javascript"
@@ -14,7 +14,6 @@ export default function LoanCalcPage() {
       strategy="beforeInteractive"
       >
     </Script>
-    </Box>
     </>
   );
 }
