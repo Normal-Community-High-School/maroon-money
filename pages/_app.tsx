@@ -29,31 +29,25 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
       <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
         <MantineProvider theme={{ colorScheme }} withGlobalStyles withNormalizeCSS>
           <NotificationsProvider>
-          <AppShell
-      padding="md"
-      fixed={false}
-      header={
-        <Header height={60}>
-          <Group sx={{ height: '100%' }} px={20} position="apart">
-            <Link href="/">Home</Link>
-            <Link href="/collegeinfo">College Info</Link>
-            <Link href="/finaid">Financial Aid</Link>
-            <Link href="/loancalc">Loan Calculator</Link>
-            <Link href="/dictionary">Dictionary</Link>
-            <Link href="/feedback">Feedback</Link>
-            <Link href="/about">About Us</Link>
-            <ColorSchemeToggle />
-          </Group>
-        </Header>
-      }
-      styles={(theme) => ({
-        main: {
-          backgroundColor:
-            theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[0],
-        },
-      })}
-    >
-            <Component {...pageProps} />
+            <AppShell
+              padding="md"
+              fixed={false}
+              header={
+                <Header height={60}>
+                  <Group sx={{ height: '100%' }} px={20} position="right">
+                    <Link href="/">Home</Link>
+                    <Link href="/collegeinfo">College Info</Link>
+                    <Link href="/finaid">Financial Aid</Link>
+                    <Link href="/loancalc">Loan Calculator</Link>
+                    <Link href="/dictionary">Dictionary</Link>
+                    <Link href="/feedback">Feedback</Link>
+                    <Link href="/about">About Us</Link>
+                    <ColorSchemeToggle />
+                  </Group>
+                </Header>
+              }
+            >
+              <Component {...pageProps} />
             </AppShell>
           </NotificationsProvider>
         </MantineProvider>
