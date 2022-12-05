@@ -87,7 +87,7 @@ export function CollegeInfoThree() {
     ));
 
     return (
-        <Table highlightOnHover>
+        <Table highlightOnHover withBorder>
         <thead>
         <tr>
           <th>State</th>

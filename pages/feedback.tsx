@@ -1,9 +1,9 @@
-import { Welcome } from '../components/Welcome/Welcome';
+import ContactForm from "../components/ContactForm/ContactForm";
 
 export default function HomePage() {
   return (
     <>
-      <Welcome />
+      <ContactForm />
     </>
   );
 }

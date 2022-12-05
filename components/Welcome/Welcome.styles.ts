@@ -6,7 +6,7 @@ export default createStyles((theme) => ({
     fontSize: 100,
     fontWeight: 900,
     letterSpacing: -2,
-
+    gradient: theme.fn.gradient({ from: 'red', to: 'orange', deg: 45 }),
     [theme.fn.smallerThan('md')]: {
       fontSize: 50,
     },

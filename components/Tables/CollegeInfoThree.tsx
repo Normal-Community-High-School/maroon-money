@@ -63,7 +63,7 @@ export function CollegeInfoTwo() {
     ));
 
     return (
-        <Table highlightOnHover>
+        <Table highlightOnHover withBorder>
         <thead>
         <tr>
           <th>College</th>

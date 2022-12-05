@@ -28,7 +28,7 @@ const elements = [
     },
     {
       "State": "Tennessee",
-      "College": "Vandrbilt University",
+      "College": "Vanderbilt University",
       "Net price": "$23,596"
     }
   ];
@@ -44,7 +44,7 @@ export function CollegeInfoOne() {
     ));
 
     return (
-        <Table highlightOnHover>
+        <Table highlightOnHover withBorder>
         <thead>
         <tr>
           <th>State</th>
