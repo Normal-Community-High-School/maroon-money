@@ -5,14 +5,12 @@ import Script from 'next/script'
 export default function LoanCalcPage() {
 
   return (
-    <div>
-    <Box id="iq-calculators-embed-1669734975937">
+    <div id="iq-calculators-embed-1669734975937">
     <Script
       type="text/javascript"
       src="https://iqcalculators.com/calculator/student-loan/widget-v1.js?id=1669734975937&options=eyJib3JkZXIiOnRydWUsImNoYXJ0cyI6dHJ1ZSwidGl0bGUiOjAsImNvbG9ycyI6eyJwcmltYXJ5IjoiIzJhNTVhNiJ9fQ=="
       >
     </Script>
-    </Box>
     <Text color="dimmed" align="left" size="lg"  mx="auto" mt="xl">
       Student Loans are an important aspect of a college education. 
 It is preferable that prospective students utilize other forms of financial aid and grants, then use a properly structured loan. Choosing the right loan ensures that you can pay off the debt for a reasonable within a reasonable time-period with monthly payments that you can afford.
