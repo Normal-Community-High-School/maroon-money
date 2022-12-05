@@ -1,10 +1,9 @@
-import { Welcome } from '../components/Welcome/Welcome';
-import { Dictionary } from '../components/Tables/Dictionary';
+import MaterialDictionary from "../components/Tables/MaterialDictionary";
 
 export default function HomePage() {
   return (
     <>
-      <Dictionary />
+      <MaterialDictionary />
     </>
   );
 }
