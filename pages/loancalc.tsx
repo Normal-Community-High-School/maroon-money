@@ -5,8 +5,9 @@ import Script from 'next/script'
 export default function LoanCalcPage() {
 
   return (
-    <div id="iq-calculators-embed-1669734975937">
+    <>
     <Script
+      id="iq-calculators-embed-1669734975937"
       type="text/javascript"
       src="https://iqcalculators.com/calculator/student-loan/widget-v1.js?id=1669734975937&options=eyJib3JkZXIiOnRydWUsImNoYXJ0cyI6dHJ1ZSwidGl0bGUiOjAsImNvbG9ycyI6eyJwcmltYXJ5IjoiIzJhNTVhNiJ9fQ=="
       >
@@ -25,6 +26,6 @@ Interest Rates - The cost of an additional 1% to your interest rate can cause yo
 Monthly Payments - when looking for a student loan, make sure that monthly payments are reasonable and competitive with other lenders. Also make sure that they are affordable with your monthly budget from your future occupation. 
 Extra Fees - When investigating actual student loans, make sure to compare additional fees for policies such as late or missed payments because some lenders may have higher fees that impact your ability to pay future payments, while others may have options to temporarily reduce or pause payments.
     </Text>
-    </div>
+    </>
   );
 }
