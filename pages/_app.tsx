@@ -35,13 +35,13 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
               header={
                 <Header height={60}>
                   <Group sx={{ height: '100%' }} px={20} position="right">
-                    <Link href="maroon-money/">Home</Link>
-                    <Link href="maroon-money/collegeinfo">College Info</Link>
-                    <Link href="maroon-money/finaid">Financial Aid</Link>
-                    <Link href="maroon-money/loancalc">Loan Calculator</Link>
-                    <Link href="maroon-money/dictionary">Dictionary</Link>
-                    <Link href="maroon-money/feedback">Feedback</Link>
-                    <Link href="maroon-money/about">About Us</Link>
+                    <Link href="/">Home</Link>
+                    <Link href="/collegeinfo">College Info</Link>
+                    <Link href="/finaid">Financial Aid</Link>
+                    <Link href="/loancalc">Loan Calculator</Link>
+                    <Link href="/dictionary">Dictionary</Link>
+                    <Link href="/feedback">Feedback</Link>
+                    <Link href="/about">About Us</Link>
                     <ColorSchemeToggle />
                   </Group>
                 </Header>
