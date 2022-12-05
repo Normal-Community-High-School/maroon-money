@@ -35,8 +35,8 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
               padding="md"
               fixed={false}
               navbar={
-                <Navbar width={{ base: "20%" }}
-                  hidden={!opened}
+                <Navbar  width={{ base: "20%", sm: 0 }}
+                hidden={!opened}
                 >
                   <MediaQuery largerThan="sm" styles={{ display: 'none' }}>
                     <Flex direction="column" gap="lg">
