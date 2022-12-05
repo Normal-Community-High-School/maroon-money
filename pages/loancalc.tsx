@@ -1,13 +1,14 @@
-import dynamic from 'next/dynamic'
-
-const LoanCalcithNoSSR = dynamic(
-  () => import('../components/LoanCalc/LoanCalc'),
-  { ssr: false }
-)
+import Script from 'next/script'
 
 export default function LoanCalcPage() {
 
   return (
-    <LoanCalcithNoSSR />
+    <div id="iq-calculators-embed-1669734975937">
+    <Script
+      type="text/javascript"
+      dangerouslySetInnerHTML={{__html:"https://iqcalculators.com/calculator/student-loan/widget-v1.js?id=1669734975937&options=eyJib3JkZXIiOnRydWUsImNoYXJ0cyI6dHJ1ZSwidGl0bGUiOjAsImNvbG9ycyI6eyJwcmltYXJ5IjoiIzJhNTVhNiJ9fQ=="}}
+      >
+    </Script>
+    </div>
   );
 }
