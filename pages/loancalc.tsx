@@ -8,12 +8,6 @@ export default async function LoanCalcPage() {
 
   return (
     <>
-    <Box id="iq-calculators-embed-1669734975937"> </Box>
-    <Script
-  id="show-banner"
-  dangerouslySetInnerHTML={{
-    __html: `await import('../public/widget-v1')`,
-  }}
-/>    </>
+    <iframe src='https://www.easycalculation.com/mortgage/embedded_student-loan-calculator.php'></iframe></>
   );
 }
